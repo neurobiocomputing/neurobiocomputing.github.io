@@ -1,0 +1,11 @@
+# Confirmed conference dates. Add rooms and talks once the program is announced.
+days:
+  - name: Monday
+    date: "2027-10-04"
+    rooms: []
+  - name: Tuesday
+    date: "2027-10-05"
+    rooms: []
+  - name: Wednesday
+    date: "2027-10-06"
+    rooms: []

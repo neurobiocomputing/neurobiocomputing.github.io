@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NeuroBiological Computing//Conference 2027//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:nbc2027@neurobiocomputing.github.io
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20271004
+DTEND;VALUE=DATE:20271007
+SUMMARY:NeuroBiological Computing 2027
+DESCRIPTION:Conference on 4-6 October 2027. Venue to be announced.
+URL:https://neurobiocomputing.github.io/
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

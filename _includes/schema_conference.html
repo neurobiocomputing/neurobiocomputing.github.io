@@ -1,0 +1,16 @@
+{%- comment -%}
+  Announce only confirmed facts. Add location and attendance details once known.
+{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ConferenceEvent",
+  "name": {{ site.title | jsonify | replace: '<', '\u003c' }},
+  "description": {{ site.description | jsonify | replace: '<', '\u003c' }},
+  "startDate": {{ site.event.start_date | jsonify }},
+  "endDate": {{ site.event.end_date | jsonify }},
+  "eventStatus": "https://schema.org/EventScheduled",
+  "inLanguage": {{ site.lang | jsonify }},
+  "url": {{ '/' | absolute_url | jsonify }}
+}
+</script>

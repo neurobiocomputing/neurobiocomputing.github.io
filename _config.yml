@@ -1,0 +1,81 @@
+title: NeuroBiological Computing 2027
+description: Exploring computation in, with, and inspired by biological neural systems.
+url: "https://neurobiocomputing.github.io"
+baseurl: ""
+lang: en
+
+theme: jekyll-theme-conference
+markdown: kramdown
+permalink: pretty
+
+event:
+  start_date: "2027-10-04"
+  end_date: "2027-10-06"
+  date_label: "4–6 October 2027"
+  calendar: /assets/calendar/neurobiological-computing-2027.ics
+
+conference:
+  lang: en
+  # Enable while adding the final schedule, talks, speakers, and rooms.
+  show_errors: false
+  navigation:
+    breakpoint: lg
+    links:
+      - name: About
+        relative_url: /#about
+      - name: Program
+        relative_url: /program/
+      - name: Speakers
+        relative_url: /speakers/
+      - name: Attend
+        menu:
+          - name: Participation
+            relative_url: /participation/
+          - name: Venue & travel
+            relative_url: /venue/
+  meta:
+    link_preview:
+      disable: false
+    schema_org:
+      disable: false
+      event_status: scheduled
+  pwa:
+    enable: false
+
+collections:
+  talks:
+    output: true
+    permalink: /talks/:title/
+  speakers:
+    output: true
+    permalink: /speakers/:title/
+  rooms:
+    output: true
+    permalink: /rooms/:title/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+  - scope:
+      path: ""
+      type: speakers
+    values:
+      layout: speaker
+  - scope:
+      path: ""
+      type: rooms
+    values:
+      layout: room
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

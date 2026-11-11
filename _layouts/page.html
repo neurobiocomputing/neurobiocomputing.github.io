@@ -1,0 +1,9 @@
+{% include header.html %}
+
+<div class="conference-page py-3 py-md-4">
+  {% if page.title %}<h1 class="display-5 mb-4 text-break">{{ page.title }}</h1>{% endif %}
+  {{ content }}
+</div>
+
+{% include site-footer.html %}
+{% include footer.html %}
